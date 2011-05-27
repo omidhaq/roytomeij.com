@@ -19,7 +19,6 @@ end
 compile '/assets/javascripts/*/' do
 end
 
-
 compile '*' do
   # item[:extension] returns 'html.erb' for multi-dotted filename
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
