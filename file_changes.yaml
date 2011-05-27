@@ -1,81 +1,89 @@
 --- 
-:"content/2011/test-15.haml": 
-  :created_at: 2011-05-25 22:24:01
-  :digest: 4b4b03b4eb26db846add589342b94efcb310cb1e
-  :updated_at: 2011-05-25 22:24:01 +02:00
-:"content/2011/test-13.haml": 
-  :created_at: 2011-05-25 22:23:53
-  :digest: 11a0997757b2f6ad85b10a61e9851d698557688c
-  :updated_at: 2011-05-25 22:23:53 +02:00
-:"content/2011/test-8.haml": 
-  :created_at: 2011-05-25 22:23:33
-  :digest: 8d6921ea8149fefe2603bef2965a96985b9808cc
-  :updated_at: 2011-05-25 22:23:33 +02:00
-:"content/2011/test-11.haml": 
-  :created_at: 2011-05-25 22:23:45
-  :digest: f19abd23d7d43dce241092798b4d852238cfc43e
-  :updated_at: 2011-05-25 22:23:45 +02:00
-:"content/2009/vodafone-mobile-connect-on-osx-10-6-snow-leopard-with-an-e3730-data-card.haml": 
-  :created_at: 2009-09-15 00:00:00
-  :digest: 93963b516ab83824a1eb05fe3d0ad0ba774bdd18
-  :updated_at: 2011-05-26 17:56:00 +02:00
-:"content/2011/static-site-using-nanoc.haml": 
-  :created_at: 2011-05-27 10:25:46
-  :digest: 5802c9ae30e0759201fcc6e7147b74ae87e28316
-  :updated_at: 2011-05-27 15:02:49 +02:00
-:"content/2011/test-14.haml": 
-  :created_at: 2011-05-25 22:23:57
-  :digest: 5bda17ce13d2f82664a8e604f5ff9b4b6f4ad62c
-  :updated_at: 2011-05-25 22:23:57 +02:00
-:"content/2011/test-12.haml": 
-  :created_at: 2011-05-25 22:23:49
-  :digest: c551b7c744809e59eaf6f48d5b62f45164633349
-  :updated_at: 2011-05-25 22:23:49 +02:00
-:"content/2011/test-6.haml": 
-  :created_at: 2011-05-25 22:23:27
-  :digest: c87d4058f2361929eb0a25e883cc4536a207b579
-  :updated_at: 2011-05-25 22:23:27 +02:00
-:"content/2011/test-7.haml": 
-  :created_at: 2011-05-25 22:23:30
-  :digest: 2febde96a38a619d2e975da275595f45a9aa8511
-  :updated_at: 2011-05-25 22:23:30 +02:00
-:"content/2011/test-10.haml": 
-  :created_at: 2011-05-25 22:23:42
-  :digest: 7e95f1da78f892316a8fe9ce42674a26f2edac21
-  :updated_at: 2011-05-25 22:23:42 +02:00
-:"content/2011/test-3.haml": 
-  :created_at: 2011-05-25 22:23:03
-  :digest: 1a63cd87eb4614cea9519dc05e197975a9d90630
-  :updated_at: 2011-05-25 22:23:03 +02:00
 :"content/2011/vodafone-mobile-connect-on-osx-10-6-snow-leopard-with-an-e3730-data-card.haml": 
   :created_at: 2011-05-26 17:54:40
   :digest: 93963b516ab83824a1eb05fe3d0ad0ba774bdd18
   :updated_at: 2011-05-26 17:55:25 +02:00
-:"content/2011/test-5.haml": 
-  :created_at: 2011-05-25 22:23:09
-  :digest: 28cc8a908680288293eddb3b116fd0e837c5f0b1
-  :updated_at: 2011-05-25 22:23:09 +02:00
-:"content/2011/test-1.haml": 
-  :created_at: 2011-05-25 22:22:52
-  :digest: b37e86d275aebf46829e26f36884c03dd4c9dfd2
-  :updated_at: 2011-05-25 22:22:52 +02:00
-:"content/2011/test-9.haml": 
-  :created_at: 2011-05-25 22:23:36
-  :digest: d3e46fa96563befcb8ddd7f4db52c07ca027d803
-  :updated_at: 2011-05-25 22:23:36 +02:00
-:"content/2011/test-4.haml": 
-  :created_at: 2011-05-25 22:23:06
-  :digest: 1bd144438e8e86dc7fea3adbde631e6861caa131
-  :updated_at: 2011-05-25 22:23:06 +02:00
-:"content/2011/test-2.haml": 
-  :created_at: 2011-05-25 22:22:59
-  :digest: 39a1bdc24985439019cb25bcde7be487c38bf6be
-  :updated_at: 2011-05-25 22:23:00 +02:00
+:"content/2011/test-13.haml": 
+  :created_at: 2011-05-25 22:23:53
+  :digest: 11a0997757b2f6ad85b10a61e9851d698557688c
+  :updated_at: 2011-05-25 22:23:53 +02:00
 :"content/2009/the-perfect-home-theater-setup-with-automated-downloads.haml": 
   :created_at: 2009-11-19 00:00:00
   :digest: 2bbc7154e6dc03a0e49d10a6a97485839a317f7e
   :updated_at: 2011-05-26 17:56:22 +02:00
+:"content/2011/test-12.haml": 
+  :created_at: 2011-05-25 22:23:49
+  :digest: c551b7c744809e59eaf6f48d5b62f45164633349
+  :updated_at: 2011-05-25 22:23:49 +02:00
+:"content/2011/your-idea-is-worthless.haml": 
+  :created_at: 2011-03-29 08:50:00
+  :digest: b1078782083dd1207cd196b581ba2ae4bc69a442
+  :updated_at: 2011-05-27 23:33:30 +02:00
+:"content/2011/test-5.haml": 
+  :created_at: 2011-05-25 22:23:09
+  :digest: 28cc8a908680288293eddb3b116fd0e837c5f0b1
+  :updated_at: 2011-05-25 22:23:09 +02:00
+:"content/2011/test-8.haml": 
+  :created_at: 2011-05-25 22:23:33
+  :digest: 8d6921ea8149fefe2603bef2965a96985b9808cc
+  :updated_at: 2011-05-25 22:23:33 +02:00
 :"content/2011/the-perfect-home-theater-setup-with-automated-downloads.haml": 
   :created_at: 2011-05-26 17:01:02
   :digest: 2bbc7154e6dc03a0e49d10a6a97485839a317f7e
   :updated_at: 2011-05-26 17:04:07 +02:00
+:"content/2011/test-6.haml": 
+  :created_at: 2011-05-25 22:23:27
+  :digest: c87d4058f2361929eb0a25e883cc4536a207b579
+  :updated_at: 2011-05-25 22:23:27 +02:00
+:"content/2011/test-1.haml": 
+  :created_at: 2011-05-25 22:22:52
+  :digest: b37e86d275aebf46829e26f36884c03dd4c9dfd2
+  :updated_at: 2011-05-25 22:22:52 +02:00
+:"content/2011/test-11.haml": 
+  :created_at: 2011-05-25 22:23:45
+  :digest: f19abd23d7d43dce241092798b4d852238cfc43e
+  :updated_at: 2011-05-25 22:23:45 +02:00
+:"content/2011/test-7.haml": 
+  :created_at: 2011-05-25 22:23:30
+  :digest: 2febde96a38a619d2e975da275595f45a9aa8511
+  :updated_at: 2011-05-25 22:23:30 +02:00
+:"content/2011/test-9.haml": 
+  :created_at: 2011-05-25 22:23:36
+  :digest: d3e46fa96563befcb8ddd7f4db52c07ca027d803
+  :updated_at: 2011-05-25 22:23:36 +02:00
+:"content/2009/vodafone-mobile-connect-on-osx-10-6-snow-leopard-with-an-e3730-data-card.haml": 
+  :created_at: 2009-09-15 00:00:00
+  :digest: 93963b516ab83824a1eb05fe3d0ad0ba774bdd18
+  :updated_at: 2011-05-26 17:56:00 +02:00
+:"content/2011/test-10.haml": 
+  :created_at: 2011-05-25 22:23:42
+  :digest: 7e95f1da78f892316a8fe9ce42674a26f2edac21
+  :updated_at: 2011-05-25 22:23:42 +02:00
+:"content/2011/test-4.haml": 
+  :created_at: 2011-05-25 22:23:06
+  :digest: 1bd144438e8e86dc7fea3adbde631e6861caa131
+  :updated_at: 2011-05-25 22:23:06 +02:00
+:"content/2011/static-site-using-nanoc.haml": 
+  :created_at: 2011-05-27 10:25:46
+  :digest: 5802c9ae30e0759201fcc6e7147b74ae87e28316
+  :updated_at: 2011-05-27 15:02:49 +02:00
+:"content/2011/test-3.haml": 
+  :created_at: 2011-05-25 22:23:03
+  :digest: 1a63cd87eb4614cea9519dc05e197975a9d90630
+  :updated_at: 2011-05-25 22:23:03 +02:00
+:"content/2011/test-15.haml": 
+  :created_at: 2011-05-25 22:24:01
+  :digest: 4b4b03b4eb26db846add589342b94efcb310cb1e
+  :updated_at: 2011-05-25 22:24:01 +02:00
+:"content/2011/myth-of-the-flat-fee.haml": 
+  :created_at: 2011-05-25 13:41:00
+  :digest: bf241ea1db85cc4d66c717fba1797d447d760004
+  :updated_at: 2011-05-27 23:33:01 +02:00
+:"content/2011/test-2.haml": 
+  :created_at: 2011-05-25 22:22:59
+  :digest: 39a1bdc24985439019cb25bcde7be487c38bf6be
+  :updated_at: 2011-05-25 22:23:00 +02:00
+:"content/2011/test-14.haml": 
+  :created_at: 2011-05-25 22:23:57
+  :digest: 5bda17ce13d2f82664a8e604f5ff9b4b6f4ad62c
+  :updated_at: 2011-05-25 22:23:57 +02:00

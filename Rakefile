@@ -23,8 +23,7 @@ namespace :create do
       exit 1
     end
 
-    #title = ENV['title'].capitalize
-    title = ENV['title']
+    title = ENV['title'].capitalize
     path, filename, full_path = calc_path(title)
 
     if File.exists?(full_path)
@@ -40,7 +39,8 @@ excerpt: ""
 kind: article
 publish: true
 tags: [misc]
-title: "#{title.titleize}"
+disqus: true
+title: "#{title}"
 ---
 
 TODO: Add content to `#{full_path}.`
