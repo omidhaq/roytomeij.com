@@ -1,0 +1,37 @@
+---
+created_at: 2009-11-19 00:00:00
+excerpt: ""
+kind: article
+publish: true
+tags: [misc]
+title: "The perfect home theater setup with automated downloads"
+---
+
+%p A friend of mine asked me to write about my (near perfect) home theater setup, including the automated downloading of new episodes of TV series. This post is a first attempt, and I will probably revise it numerous times in the future.
+%p
+  %em Please note that downloading (not distributing) TV series for personal use is legal in my jurisdiction.
+%p My setup involves an HD-Ready TV (720p), Mac Mini, Harman/Kardon 5.1 receiver, SABnzbd+, Eweka, XBMC, MyTvNZB, TheTvDB &amp; more. I will go over it in the following chapters:
+%ul
+  %li hardware &amp; connection
+  %li automated downloading
+  %li organizing &amp; watching
+%p I assume you already know about usenet, NZB files, etc. If not, start googling.
+
+%h2 Hardware &amp; connection
+%p For an excellent image, I have a Sony Bravia HD-Ready TV (720p) connected to a Mac Mini (2007 model; Core 2 Duo, 1.82GHz, 1GB RAM) with a DVI-to-HDMI cable. For audio I have a 5.1 speaker setup, connected to a Harman/Kardon AVR 247 receiver. The Mac Mini is connected to the receiver using the optical out.
+%p The Mac Mini is connected to a 20mbit ADSL connection, although I end up with roughly 17mbit. I connected the Mini with an actual cable, since the internal wifi antenna is kind of crappy. Luckily I already had UTP cabling running through my walls.
+%p To store all TV series I have two 1TB and one 1.5TB Western Digital Elements hard disks connected to the Mini (yes, that's a grand total of 3.5TB). I recently changed the 80GB hard disk in the Mini to a 320GB model, so I can use that one as a temporary storage for downloads. That way the external disks can go to sleep while I'm still downloading, since the internal hard disk will often spin anyway. SABnzbd+ (see below) unpacks the stuff directly to one of the external drives. When a drive is almost full, I tell it to unpack to a new one.
+%p This basically is all there is to say about my hardware. You only need to remember to connect both the video &amp; audio digitally, and don't use the wifi if you want some proper speed.
+
+%h2 Automated downloading
+%p This is where the fun starts! When I get up in the morning, yesterdays TV series (the ones I wanted to download) are waiting for me. Downloaded, unpacked, repaired if damaged, moved to the correct location and with downloaded episode information &amp; artwork. Lets start with the setup for downloading.
+%p Since the Mac Mini sits near the TV anyway, idling all day (&amp; most of the night too), this is the machine I use for downloading. I download all my stuff from usenet, by connecting to a paid usenet provider. You want proper retention (the time stuff is available on the server), and <a href="http://www.eweka.nl/">Eweka</a> (the one I use) provides over 250 days of it for EUR 7,50 per month. Great deal!
+%p To actually download the stuff I use <a href="http://www.sabnzbd.org/">SABnzbd+</a>, which can download, extract, repair, rename &amp; move your stuff. It uses NZB files as a way of knowing what to download. On one of my external disks I have a "download" directory and a "series" directory. Configure SABnzbd+ so it knows it should download to "download", and move it to "series" after it finishes. Make sure to enable the "TV sorting" feature on the "Config &gt; Folders" tab, so your downloads get organized properly. I use this filepath/filename structure: "%sn/Season %s/%sn - S%0sE%0e - %en.%ext". This way your series end up something like this: "Burn Notice/Season 1/Burn Notice - S01E01.mkv" (it doesn't always clean up filenames as nicely as this, but that usually doesn't matter).
+%p Now we have set up the automated downloading and sorting, we have to let SABnzbd+ know what it should download and where to get it. For this I use the RSS feature, to be configured on the "Config &gt; RSS" tab, in combination with <a href="http://www.tvnzbrss.com/">MyTvNZB</a>. Go there, select "only show x264 or better" and check all the series you want to dowload. After saving it will prompt you with the url for the RSS feed to use in SABnzbd+. Add it there, and make sure you set the category to "tv".
+%p That's it for the automated downloading! You now have your mean &amp; lean downloading machine setup so it automatically downloads new episodes of your favorite series in HD. You might want to cap the download speed of SABnzbd+ at something around 2mbit below your max, so you still have enough bandwidth for regular ol' web browsing.
+
+%h2 Organizing &amp; watching
+%p To keep track of what TV series I have, which episodes are unwatched, read episode summaries and of course actually watch them I use <a href="http://xbmc.org/">XBMC</a>. Set it up (lots of guides for that, and pretty straight forward too) and tell it that the "content type" of your "series" directory is "TV shows" (get the context menu by right clicking, or holding the "menu" button on your remote until it pops up). You can do this for multiple directories on multiple hard disks, and they will all show up in one combined library. Enable "library mode" and hit "update library". It will now use the excellent <a href="http://thetvdb.com/">TheTvDB</a> webservice to find general information, plot summaries and artwork for your series. If some series don't show up, go to TheTvDB and look it up there; the name probably is slightly different than your directory name. Turn of library mode temporarily, right click the directory and select "change name". Change it to how TheTvDB spelled it, hit "done" and turn library mode back on. After updating your library it will show up.
+%p I have "hide watched items" turned on, so I only see stuff that needs watching. Matter of personal preference. If you want to control your XBMC with a remote, there's a free iPhone app for that in the app store! Of course you can also use the regular Apple Remote, or an all-in-one (I can highly recommend the <a href="http://www.logitech.com/index.cfm/remotes/universal_remotes/">Logitech Harmony</a>).
+%p I hope this post is helpful in setting up your perfect system. If not, or you need more details, leave a comment!
+%p update: Updated my setup (new hard disks) and added some info on XBMC.

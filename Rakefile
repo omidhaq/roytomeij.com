@@ -8,6 +8,7 @@ rescue LoadError
   # DO NOTHING
 end
 
+# rake create:article title='Post title'
 namespace :create do
 
   desc "Creates a new article"
@@ -22,7 +23,7 @@ namespace :create do
       exit 1
     end
 
-    title = ENV['title'].capitalize
+    #title = ENV['title'].capitalize
     path, filename, full_path = calc_path(title)
 
     if File.exists?(full_path)

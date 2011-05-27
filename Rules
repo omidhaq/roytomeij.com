@@ -27,7 +27,9 @@ compile '*' do
   if ext == 'erb'
     filter :erb
   elsif ext == 'haml' || ext.nil?
-    filter :haml
+    filter :haml, :format => :html5, :attr_wrapper => '"'
+    filter  :colorize_syntax,
+            :coderay => {:line_numbers => nil}
   elsif ext == 'md' || ext == 'markdown'
     filter :erb
     filter :rdiscount
@@ -50,7 +52,6 @@ end
 route '/assets/javascripts/*/' do
   item.identifier.chop + '.js'
 end
-
 
 route '*' do
   route_path(item)
