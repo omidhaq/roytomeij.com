@@ -24,6 +24,7 @@ namespace :create do
     end
 
     #title = ENV['title'].capitalize
+    title = ENV['title']
     path, filename, full_path = calc_path(title)
 
     if File.exists?(full_path)
@@ -34,6 +35,7 @@ namespace :create do
     template = <<TEMPLATE
 ---
 created_at: #{@now}
+timestamp: #{Time.now.to_i}
 excerpt: ""
 kind: article
 publish: true

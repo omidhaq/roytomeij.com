@@ -1,6 +1,7 @@
 %section#comments
   #disqus_thread
   :javascript
+    var disqus_identifier = '#{item[:timestamp]}';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = 'http://#{@config[:disqus_shortname]}.disqus.com/embed.js';
