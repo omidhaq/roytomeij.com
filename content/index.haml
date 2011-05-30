@@ -1,10 +1,16 @@
 ---
 ---
 
+%section#intro
+  O hai! I write awesome stuffs!
+
 %section#posts
-  - sorted_articles[0, excerpt_count].each do |item|
-    - oldest_item = item
-    = render('_excerpt', :item => item)
+  %h1 Latest posts
+
+  - sorted_articles[0, excerpt_count].each_slice(1) do |batch|
+    .column
+      - batch.each do |item|
+        = render('_excerpt', :item => item)
 
   %p
     %a{:href => '/archives.html'} Older posts

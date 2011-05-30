@@ -27,15 +27,44 @@ html
 body
   font-family: $font-family
   font-size: $font-size
-  line-height: $line-height
   color: $font-color
 
 #wrap
-  margin: 20px
+  width: 760px
+  margin: 0 auto
+
+#logo
+  font-size: 48px
+  text-align: center
+
+#intro
+  margin: 30px 0
+  padding: 10px
+  border-top: solid 1px #000
+  border-bottom: solid 1px #000
 
 .column
-  width: 50%
+  width: 359px
   float: left
+
+  &:nth-child(2)
+    margin-right: 10px
+    padding-right: 10px
+    border-right: solid 1px #000
+
+  article
+    min-height: 100px
+    margin-top: 20px
+
+    &:first-child
+      margin: 0
+
+article
+  line-height: $line-height
+
+  &.excerpt
+    padding: 10px
+    border: solid 1px #000
 
 // Syntax highlighting using CodeRay.
 code

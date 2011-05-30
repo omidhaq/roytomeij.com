@@ -26,7 +26,7 @@ compile '*' do
   if ext == 'erb'
     filter :erb
   elsif ext == 'haml' || ext.nil?
-    filter :haml, :format => :html5, :attr_wrapper => '"'
+    filter :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
     filter  :colorize_syntax,
             :coderay => {:line_numbers => nil}
   elsif ext == 'md' || ext == 'markdown'
@@ -56,4 +56,4 @@ route '*' do
   route_path(item)
 end
 
-layout '*', :haml, :format => :html5, :attr_wrapper => '"'
+layout '*', :haml, :format => :html5, :attr_wrapper => '"', :ugly => true

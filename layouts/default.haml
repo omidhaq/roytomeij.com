@@ -40,23 +40,27 @@
     #wrap
 
       %header
-        - if is_front_page?
-          %h1#logo= site_name
-        - else
-          %p#logo
+        %h1#logo
+          - if is_front_page?
+            = site_name
+          - else
             %a{:href => '/'}= site_name
 
-        %nav
-          %ul
-            %li
-              %a{:href => '/atom.xml'} Feed
-            %li
-              %a{:href => '/about-me.html'} About me
+        %p.feed
+          %a{:href => '/atom.xml'} Feed
 
         %form#search{:method => 'get', :action => '/search.html'}
           %fieldset
             %legend Search
             %input{:type => 'search', :placeholder => 'Search', :name => 'query'}
+
+        %ul#networks
+          %li
+            %a.linkedin{:href => 'http://www.linkedin.com/in/tomeij'} LinkedIn
+          %li
+            %a.facebook{:href => 'http://www.facebook.com/roytomeij'} Facebook
+          %li
+            %a.twitter{:href => 'http://twitter.com/roy'} Twitter
 
       - if @item[:kind] == 'article'
         %section#post
@@ -65,5 +69,8 @@
             = render('_disqus', :item => @item)
       - else
         = content
+
+      %footer#footer
+        %p Design by <a href="http://ivanasetiawan.com/">Ivana Setiawan</a>. This website (design, code & content) is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a>. Find it all on <a href="https://github.com/roytomeij/roytomeij.com">GitHub</a>.
 
     %script{:type => 'text/javascript', :src => '/assets/javascripts/jquery-161.js'}
