@@ -29,13 +29,38 @@ body
   font-size: $font-size
   color: $font-color
 
+h1
+  font-size: 14px
+  font-weight: bold
+
 #wrap
   width: 760px
+  position: relative
   margin: 0 auto
 
 #logo
+  width: 238px
+  height: 169px
+  top: -70px
+  position: absolute
   font-size: 48px
+  font-weight: normal
   text-align: center
+  background: inline-image("../../../static/assets/images/logo.png") no-repeat
+  @include hide-text
+
+  a
+    height: 169px
+    display: block
+    @include hide-text
+
+.csstransforms #logo
+  @include rotate(-4deg)
+  @include transition(position 0.3s ease)
+
+  &.has_link:hover
+    top: -50px
+    @include transition(position 0.3s ease)
 
 #intro
   margin: 30px 0

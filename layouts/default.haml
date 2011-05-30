@@ -40,10 +40,10 @@
     #wrap
 
       %header
-        %h1#logo
-          - if is_front_page?
-            = site_name
-          - else
+        - if is_front_page?
+          %h1#logo= site_name
+        - else
+          %h1#logo.has_link
             %a{:href => '/'}= site_name
 
         %p.feed
