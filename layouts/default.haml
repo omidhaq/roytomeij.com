@@ -65,6 +65,8 @@
       - if @item[:kind] == 'article'
         %section#post
           = render('_article', :item => @item, :content => content)
+          %p.archives
+            %a{:href => '/archives.html'} Show me all posts!
           - if disqus_shortname && (@item[:disqus] != false) && !is_front_page?
             = render('_disqus', :item => @item)
       - else
