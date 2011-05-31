@@ -1,9 +1,10 @@
 // Variables.
-$font-color: black
-$link-color: blue
-$font-family: Arial, Helvetica, sans-serif
-$font-size: 12px
-$line-height: 18px
+$font-color: #000
+$contrast: #31406f
+$link-color: $contrast
+$font-family: "ronnia-1", "ronnia-2", Arial, Helvetica, sans-serif
+$font-size: 13px
+$line-height: 20px
 // $sprite: sprite-map("sprite/*.png", $spacing: 15px)
 
 // Compass imports & mixins.
@@ -11,9 +12,9 @@ $line-height: 18px
 @import compass/reset
 @include reset-html5
 
-@mixin data-uri-bg($image, $properties)
-  background: inline-image($image) $properties
-  *background: url($image) $properties
+@mixin hide
+  left: -9999px
+  position: absolute
 
 // Generic styling.
 html,
@@ -28,15 +29,26 @@ body
   font-family: $font-family
   font-size: $font-size
   color: $font-color
+  background: #f8f9fb
 
 h1
-  font-size: 14px
-  font-weight: bold
+  font-size: 25px
+  line-height: 30px
+  font-weight: 600
+
+a
+  color: $link-color
+
+p
+  line-height: $line-height
 
 #wrap
   width: 760px
   position: relative
   margin: 0 auto
+
+#header
+  height: 150px
 
 #logo
   width: 238px
@@ -47,14 +59,8 @@ h1
   font-weight: normal
   text-align: center
   background: inline-image("../../../static/assets/images/logo.png") no-repeat
+  *background-image: url("/assets/images/logo.png")
   @include hide-text
-
-  a
-    height: 169px
-    display: block
-    @include hide-text
-
-.csstransforms #logo
   @include rotate(-4deg)
   @include transition(position 0.3s ease)
 
@@ -62,34 +68,69 @@ h1
     top: -50px
     @include transition(position 0.3s ease)
 
+  a
+    height: 169px
+    display: block
+    @include hide-text
+
+#networks
+  top: 10px
+  right: 0
+  position: absolute
+
+  li
+    float: left
+    margin-left: 10px
+
+  a
+    width: 24px
+    height: 24px
+    display: block
+    @include hide-text
+
+    &.linkedin
+      background: inline-image("../../../static/assets/images/i_linkedin.png") no-repeat
+      *background-image: url("/assets/images/i_linkedin.png")
+
+    &.facebook
+      background: inline-image("../../../static/assets/images/i_facebook.png") no-repeat
+      *background-image: url("/assets/images/i_facebook.png")
+
+    &.twitter
+      background: inline-image("../../../static/assets/images/i_twitter.png") no-repeat
+      *background-image: url("/assets/images/i_twitter.png")
+
 #intro
-  margin: 30px 0
-  padding: 10px
-  border-top: solid 1px #000
-  border-bottom: solid 1px #000
+  margin-bottom: 30px
+  padding: 10px 0
+  line-height: $line-height
+  border-top: solid 1px $contrast
+  border-bottom: solid 1px $contrast
 
 .column
-  width: 359px
+  width: 380px
   float: left
 
-  &:nth-child(2)
-    margin-right: 10px
-    padding-right: 10px
-    border-right: solid 1px #000
-
   article
-    min-height: 100px
-    margin-top: 20px
+    margin: 20px 0 0
 
     &:first-child
-      margin: 0
+      margin-top: 0
 
-article
-  line-height: $line-height
+#posts
+  > h1
+    @include hide
 
-  &.excerpt
-    padding: 10px
-    border: solid 1px #000
+article h1 a
+  text-decoration: none
+
+#footer
+  clear: both
+  padding: 40px 0 20px
+  color: #666
+
+  a
+    color: #666
 
 // Syntax highlighting using CodeRay.
 code
