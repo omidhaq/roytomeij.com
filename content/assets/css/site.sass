@@ -2,7 +2,8 @@
 $font-color: #000
 $contrast: #31406f
 $link-color: $contrast
-$font-family: "ronnia-1", "ronnia-2", Arial, Helvetica, sans-serif
+$font-family: Helvetica, Arial, sans-serif
+$fancy-font: "ronnia-1", "ronnia-2"
 $font-size: 13px
 $line-height: 20px
 // $sprite: sprite-map("sprite/*.png", $spacing: 15px)
@@ -32,6 +33,7 @@ body
   background: #f8f9fb
 
 h1
+  font-family: $fancy-font, $font-family
   font-size: 25px
   line-height: 30px
   font-weight: 600
@@ -161,6 +163,7 @@ p.archives
   a
     display: inline-block
     padding: 2px 5px
+    font-family: $fancy-font, $font-family
     font-size: 14px
     font-weight: 600
     text-decoration: none
