@@ -6,7 +6,5 @@ is_hidden: true
 %section#archives
   %h1 Archives
 
-  - sorted_articles.each_slice(2) do |batch|
-    .column
-      - batch.each do |item|
-        = render('_excerpt_with_meta', :item => item, :show_meta => true)
+  - sorted_articles.each do |item|
+    = render('_excerpt_with_meta', :item => item, :show_meta => true)

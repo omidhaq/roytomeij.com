@@ -7,10 +7,8 @@
 %section#posts
   %h1 Latest posts
 
-  - sorted_articles[0, excerpt_count].each_slice(1) do |batch|
-    .column
-      - batch.each do |item|
-        = render('_excerpt', :item => item)
+  - sorted_articles[0, excerpt_count].each do |item|
+    = render('_excerpt', :item => item)
 
   %p.archives
     %a{:href => '/archives.html'} Wait! More posts here...

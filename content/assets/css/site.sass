@@ -52,7 +52,7 @@ ul
   margin-bottom: 20px
 
 #wrap
-  width: 760px
+  width: 600px
   position: relative
   margin: 0 auto
 
@@ -120,11 +120,11 @@ ul
     margin: 0
 
 .column
-  width: 350px
+  width: 330px
   float: left
 
   &:nth-child(2)
-    margin-right: 60px
+    margin-right: 40px
 
   article
     margin: 30px 0 0
@@ -137,6 +137,14 @@ ul
     margin-bottom: 10px
     @include hide
 
+#posts,
+#archives
+  article
+    margin-bottom: 30px
+
+    &:last-child
+      margin: 0
+
 #post
   position: relative
 
@@ -148,8 +156,6 @@ ul
     text-align: left
 
 p.archives
-  clear: both
-  padding-top: 30px
   text-align: right
 
   a
@@ -204,11 +210,6 @@ article
 
     ul
       list-style: disc inside
-
-    .body
-      text-align: justify
-      @include column-count(2)
-      @include column-gap(40px)
 
 #comments
   margin-top: 50px
