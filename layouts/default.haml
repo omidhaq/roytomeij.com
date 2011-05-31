@@ -49,10 +49,10 @@
           %h1#logo.has_link
             %a{:href => '/'}= site_name
 
-        %form#search{:method => 'get', :action => '/search.html'}
-          %fieldset
-            %legend Search
-            %input{:type => 'search', :placeholder => 'Search', :name => 'query'}
+        -# %form#search{:method => 'get', :action => '/search.html'}
+        -#  %fieldset
+        -#    %legend Search
+        -#    %input{:type => 'search', :placeholder => 'Search', :name => 'query'}
 
         %ul#networks
           %li
@@ -72,5 +72,3 @@
 
       %footer#footer
         %p This website is open source, released under the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Simplified_BSD_License#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29">FreeBSD license</a> (code) and <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a> (design &amp; content). Find it all on <a href="https://github.com/roytomeij/roytomeij.com">GitHub</a>.
-
-    %script{:type => 'text/javascript', :src => '/assets/javascripts/jquery-161.js'}

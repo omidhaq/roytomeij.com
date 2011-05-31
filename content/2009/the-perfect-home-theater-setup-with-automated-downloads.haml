@@ -1,7 +1,7 @@
 ---
 created_at: 2009-11-19 00:00:00
 timestamp: 1306521832
-excerpt: ""
+excerpt: "A friend of mine asked me to write about my (near perfect) home theater setup, including the automated downloading of new episodes of TV series."
 kind: article
 publish: true
 tags: [misc]
@@ -19,6 +19,13 @@ title: "The perfect home theater setup with automated downloads"
   %li organizing &amp; watching
 %p I assume you already know about usenet, NZB files, etc. If not, start googling.
 
+%pre
+  %code.language-css
+    :preserve
+      .selector {
+        bla: bla;
+      }
+
 %h2 Hardware &amp; connection
 %p For an excellent image, I have a Sony Bravia HD-Ready TV (720p) connected to a Mac Mini (2007 model; Core 2 Duo, 1.82GHz, 1GB RAM) with a DVI-to-HDMI cable. For audio I have a 5.1 speaker setup, connected to a Harman/Kardon AVR 247 receiver. The Mac Mini is connected to the receiver using the optical out.
 %p The Mac Mini is connected to a 20mbit ADSL connection, although I end up with roughly 17mbit. I connected the Mini with an actual cable, since the internal wifi antenna is kind of crappy. Luckily I already had UTP cabling running through my walls.
@@ -28,7 +35,7 @@ title: "The perfect home theater setup with automated downloads"
 %h2 Automated downloading
 %p This is where the fun starts! When I get up in the morning, yesterdays TV series (the ones I wanted to download) are waiting for me. Downloaded, unpacked, repaired if damaged, moved to the correct location and with downloaded episode information &amp; artwork. Lets start with the setup for downloading.
 %p Since the Mac Mini sits near the TV anyway, idling all day (&amp; most of the night too), this is the machine I use for downloading. I download all my stuff from usenet, by connecting to a paid usenet provider. You want proper retention (the time stuff is available on the server), and <a href="http://www.eweka.nl/">Eweka</a> (the one I use) provides over 250 days of it for EUR 7,50 per month. Great deal!
-%p To actually download the stuff I use <a href="http://www.sabnzbd.org/">SABnzbd+</a>, which can download, extract, repair, rename &amp; move your stuff. It uses NZB files as a way of knowing what to download. On one of my external disks I have a "download" directory and a "series" directory. Configure SABnzbd+ so it knows it should download to "download", and move it to "series" after it finishes. Make sure to enable the "TV sorting" feature on the "Config &gt; Folders" tab, so your downloads get organized properly. I use this filepath/filename structure: "%sn/Season %s/%sn - S%0sE%0e - %en.%ext". This way your series end up something like this: "Burn Notice/Season 1/Burn Notice - S01E01.mkv" (it doesn't always clean up filenames as nicely as this, but that usually doesn't matter).
+%p To actually download the stuff I use <a href="http://www.sabnzbd.org/">SABnzbd+</a>, which can download, extract, repair, rename &amp; move your stuff. It uses NZB files as a way of knowing what to download. On one of my external disks I have a "download" directory and a "series" directory. Configure SABnzbd+ so it knows it should download to "download", and move it to "series" after it finishes. Make sure to enable the "TV sorting" feature on the "Config &gt; Folders" tab, so your downloads get organized properly. I use this filepath/filename structure: <code>%sn/Season %s/%sn - S%0sE%0e - %en.%ext</code>. This way your series end up something like this: "Burn Notice/Season 1/Burn Notice - S01E01.mkv" (it doesn't always clean up filenames as nicely as this, but that usually doesn't matter).
 %p Now we have set up the automated downloading and sorting, we have to let SABnzbd+ know what it should download and where to get it. For this I use the RSS feature, to be configured on the "Config &gt; RSS" tab, in combination with <a href="http://www.tvnzbrss.com/">MyTvNZB</a>. Go there, select "only show x264 or better" and check all the series you want to dowload. After saving it will prompt you with the url for the RSS feed to use in SABnzbd+. Add it there, and make sure you set the category to "tv".
 %p That's it for the automated downloading! You now have your mean &amp; lean downloading machine setup so it automatically downloads new episodes of your favorite series in HD. You might want to cap the download speed of SABnzbd+ at something around 2mbit below your max, so you still have enough bandwidth for regular ol' web browsing.
 
