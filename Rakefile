@@ -23,7 +23,7 @@ namespace :create do
       exit 1
     end
 
-    title = ENV['title'].capitalize
+    title = ENV['title']
     path, filename, full_path = calc_path(title)
 
     if File.exists?(full_path)
