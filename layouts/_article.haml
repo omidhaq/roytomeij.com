@@ -13,3 +13,5 @@
   = render('_meta', :item => item)
 
   != content || partial(item)
+
+= render('_about', :item => item) unless is_embedded
