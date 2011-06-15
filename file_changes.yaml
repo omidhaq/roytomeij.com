@@ -1,17 +1,25 @@
 --- 
-:"content/2011/tv-review-blue-bloods.haml": 
-  :created_at: 2011-05-31 17:07:25
-  :digest: 322edfdf41862786735f4ad15ddbb1241abbd7ab
-  :updated_at: 2011-05-31 18:33:37 +02:00
-:"content/2011/static-site-using-nanoc.haml": 
-  :created_at: 2011-05-27 10:25:46
-  :digest: 39baefda4ec2954c7d1a4fc0a8ccaeb5a7af8cdd
-  :updated_at: 2011-05-31 16:55:13 +02:00
-:"content/2009/vodafone-mobile-connect-on-osx-10-6-snow-leopard-with-an-e3730-data-card.haml": 
-  :created_at: 2009-09-15 00:00:00
-  :digest: 93963b516ab83824a1eb05fe3d0ad0ba774bdd18
-  :updated_at: 2011-05-31 11:38:30 +02:00
 :"content/2009/the-perfect-home-theater-setup-with-automated-downloads.haml": 
+  :updated_at: 2011-05-31 14:54:41 +02:00
   :created_at: 2009-11-19 00:00:00
   :digest: 6dcbdfb076640523e0ffdb3796a29ca84ada07a3
-  :updated_at: 2011-05-31 14:54:41 +02:00
+:"content/2011/why-using-the-placeholder-attribute-is-wrong.haml": 
+  :updated_at: 2011-06-15 09:10:55 +02:00
+  :created_at: 2011-06-15 09:09:51
+  :digest: 09c1dc9957ecdc3296807da746d9c97471279f0d
+:"content/2011/tv-review-blue-bloods.haml": 
+  :updated_at: 2011-05-31 18:33:37 +02:00
+  :created_at: 2011-05-31 17:07:25
+  :digest: 322edfdf41862786735f4ad15ddbb1241abbd7ab
+:"content/2011/stop-abusing-the-placeholder-attribute.haml": 
+  :updated_at: 2011-06-15 18:48:10 +02:00
+  :created_at: 2011-06-15 09:09:51
+  :digest: 73c99a8da83cc50106904af8700b7ec1454fba2a
+:"content/2011/static-site-using-nanoc.haml": 
+  :updated_at: 2011-05-31 16:55:13 +02:00
+  :created_at: 2011-05-27 10:25:46
+  :digest: 39baefda4ec2954c7d1a4fc0a8ccaeb5a7af8cdd
+:"content/2009/vodafone-mobile-connect-on-osx-10-6-snow-leopard-with-an-e3730-data-card.haml": 
+  :updated_at: 2011-05-31 11:38:30 +02:00
+  :created_at: 2009-09-15 00:00:00
+  :digest: 93963b516ab83824a1eb05fe3d0ad0ba774bdd18

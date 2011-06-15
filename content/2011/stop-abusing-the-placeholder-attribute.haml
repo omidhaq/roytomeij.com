@@ -1,0 +1,21 @@
+---
+created_at: 2011-06-15 09:09:51
+timestamp: 1308121791
+excerpt: "The placeholder attribute saves web developers from using JavaScript solutions to tackle a simple task: display a placeholder text in a form input. Right now though, the bulk of all forms using this attribute is doing it wrong."
+kind: article
+publish: true
+tags: [misc]
+disqus: true
+title: "Stop abusing the placeholder attribute"
+---
+
+%p The placeholder attribute saves web developers from using JavaScript solutions to tackle a simple task: display a placeholder text in a form input. Right now though, the bulk of all forms using this attribute is doing it wrong. By using this feature in a way that was never intended developers create confusion amongst visitors, sometimes even leading to unusable forms. On top of that it opens the door for data integrity issues.
+%p According to the <a href="http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute">W3C HTML5 specification on the placeholder attribute</a> its intended use is clear:
+%blockquote The placeholder attribute represents a short hint (a word or short phrase) intended to aid the visitor with data entry. A hint could be a sample value or a brief description of the expected format.
+%p Meaning you can have a text input that has a label in front of it saying "job title", and a placeholder that says "e.g. CEO and philanthropist". It's a great way to indicate what kind of data, being the format or content, you're expecting from a visitor. The W3C also states:
+%blockquote The placeholder attribute should not be used as an alternative to a label.
+%p And that's where the majority of developers go wrong. They do just that, crippling the user experience.
+%p First, there's missing context. Once a visitor focusses on a form input he has to remember what it is again he's supposed to fill in. It could be some secondary phone number, but was it for his cellphone or office phone? The only way to an answer is clicking outside of the input and giving it focus again. In case he already entered some data, he will need to remove that first.
+%p Then there's validation. After submitting the form something may be wrong. The visitor is often shown an input with a red border and the generic "please check your input", or something more specific along the lines of "please enter your phone number without dashes or spaces" (which is a retarded error, you should fix that for the visitor on the server side anyway). Should we really expect a visitor to copy his input to the clipboard, lose focus, read what he was supposed to enter, focus on the input, paste his original text back in and fix any mistakes?
+%p Last but not least there's the problem of data integrity. For instance, when a form starts with two inputs, for first and last name, a visitor may enter his last name first (in some countries it's customary to enter your last name first). When done filling out the form he glances over it, making sure it looks fine. After submitting there's no error, so apparently we're all good. Now the database has a first name for last name and the other way around.
+%p Bottom line: always provide a label that goes with an input. Yes, you will have to take that into account in your design. Yes, it will make your form take up more space. Yes, it will make it way easier for a user to submit a form. As an added bonus this also works on older, non-HTML5 capable browsers. A form should be perfectly usable without placeholders.
