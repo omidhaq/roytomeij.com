@@ -12,7 +12,7 @@ data_sources:
 #   % rake deploy:rsync
 deploy:
   default:
-    dst: "roytomeij@hosting1:public"
+    dst: "roytomeij@hosting1.80beans.net:public"
     options: ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
 
 # domain to which this site is deployed
@@ -25,7 +25,7 @@ google_analytics:
 site_name: "Roy Tomeij"
 
 # default description
-site_description: "Personal homepage of Roy Tomeij, entreprenerd."
+site_description: "Personal homepage of Roy Tomeij, front-end developer & entrepreneur."
 
 # number of full featured posts to display on front
 featured_count: 0
