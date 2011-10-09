@@ -21,6 +21,7 @@ GEM
       cri (~> 2.0)
     rack (1.2.2)
     rake (0.8.7)
+    rb-fsevent (0.4.3.1)
     rdiscount (1.6.8)
     sass (3.1.10)
 
@@ -39,5 +40,6 @@ DEPENDENCIES
   nanoc
   rack
   rake
+  rb-fsevent
   rdiscount
   sass

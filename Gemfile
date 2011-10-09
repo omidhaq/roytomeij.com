@@ -1,6 +1,7 @@
 source :gemcutter
 
 gem "nanoc"
+gem "rb-fsevent"
 gem "adsf"
 gem "rack"
 gem "rake"
