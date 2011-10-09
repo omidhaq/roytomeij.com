@@ -1,6 +1,7 @@
 source :gemcutter
 
 gem "nanoc"
+gem "adsf"
 gem "rack"
 gem "rake"
 gem "mime-types"
