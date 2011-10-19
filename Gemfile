@@ -10,7 +10,7 @@ gem "cri"
 gem "haml"
 gem "sass"
 gem "compass"
-gem "coderay"
+gem "coderay", '1.0.0'
 gem "rdiscount"
 gem "builder"
 gem "activesupport"
