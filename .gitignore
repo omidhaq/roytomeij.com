@@ -1,9 +1,3 @@
 .sass-cache
-output/*
-tmp/*
-*.swp
-*~
 .DS_Store
 .bundle
-output.diff
-config/deploy.rb
