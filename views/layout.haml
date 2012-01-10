@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    - if @description
+      %meta(name="description" content=@description)
+    - if @keywords
+      %meta(name="keywords" content=@keywords)
+    %title= @title
+    %link(href="/css/application.css" media="screen" rel="stylesheet")
+    %link(href="/articles.xml" rel="alternate" type="application/atom+xml")
+    = haml :analytics, :layout => false
+  %body
+    #container
+      = haml :header, :layout => false
+      = yield
+      = haml :footer, :layout => false
