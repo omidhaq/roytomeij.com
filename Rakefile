@@ -54,7 +54,7 @@ TEMPLATE
   def calc_path(title)
     year, month_day = @ymd.split('-', 2)
     path = "content/" + year + "/"
-    filename = title.parameterize('-') + ".haml"
+    filename = title.parameterize('-') + ".md"
     [path, filename, path + filename]
   end
 end
