@@ -1,7 +1,7 @@
 ---
 created_at: 2012-01-30 07:56:56
 timestamp: 1327906616
-excerpt: "I'm happy to announce that I'll be speaking at wroc_love.rb, which will take place on March 10 & 11 in Wrocław, Poland. My presentation will be about how to create modular and try reusable front-end code with HTML5, Sass & CoffeeScript."
+excerpt: "I'm happy to announce that I'll be speaking at wroc_love.rb, which will take place on March 10 & 11 in Wrocław, Poland. My presentation will be about how to create modular and truly reusable front-end code with HTML5, Sass & CoffeeScript."
 kind: article
 publish: true
 tags: [speaking]
