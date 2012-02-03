@@ -49,11 +49,6 @@
           %h1#logo.has_link
             %a{:href => '/'}= site_name
 
-        -# %form#search{:method => 'get', :action => '/search.html'}
-        -#  %fieldset
-        -#    %legend Search
-        -#    %input{:type => 'search', :placeholder => 'Search', :name => 'query'}
-
         %ul#networks
           %li
             %a.linkedin{:href => 'http://www.linkedin.com/in/tomeij'} LinkedIn
@@ -62,15 +57,21 @@
           %li
             %a.twitter{:href => 'http://twitter.com/roy'} Twitter
 
-      - if @item[:kind] == 'article'
-        %section#post
-          = render('_article', :item => @item, :content => content)
-          %p.archives
-            %a{:href => '/archives.html'} Show me all posts!
-          - if disqus_shortname && (@item[:disqus] != false) && !is_front_page?
-            = render('_disqus', :item => @item)
-      - else
-        = content
+      #main
+        #content
+          - if @item[:kind] == 'article'
+            %section#post
+              = render('_article', :item => @item, :content => content)
+              %p.archives
+                %a{:href => '/archives.html'} Show me all posts!
+              - if disqus_shortname && (@item[:disqus] != false) && !is_front_page?
+                = render('_disqus', :item => @item)
+          - else
+            = content
+
+        %aside
+          %img{:src => '/assets/images/roy.jpg', :alt => 'Picture of Roy', :class => 'roy'}
+          %p I'm co-founder of Ruby consultancy <a href="http://80beans.com/">80beans</a> in Amsterdam, where I take care of front-end architecture and business development using an agile approach. I love front-end meta languages like Haml, Sass & CoffeeScript and enjoy speaking about them. For speaking proposals or questions, <a href="mailto:roy@tomeij.net">drop me a line</a>.
 
       %footer#footer
         %p This website is open source, released under the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Simplified_BSD_License#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29">FreeBSD license</a> (code) and <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA license</a> (design &amp; content). Find it all on <a href="https://github.com/roytomeij/roytomeij.com">GitHub</a>.
