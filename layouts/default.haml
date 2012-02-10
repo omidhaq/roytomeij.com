@@ -49,21 +49,15 @@
           %h1#logo.has_link
             %a{:href => '/'}= site_name
 
-        %ul#networks
-          %li
-            %a.linkedin{:href => 'http://www.linkedin.com/in/tomeij'} LinkedIn
-          %li
-            %a.facebook{:href => 'http://www.facebook.com/roytomeij'} Facebook
-          %li
-            %a.twitter{:href => 'http://twitter.com/roy'} Twitter
+        - if @item[:kind] == 'article'
+          %p.archives
+            %a{:href => '/archives.html'} Show me all posts!
 
       #main
         #content
           - if @item[:kind] == 'article'
             %section#post
               = render('_article', :item => @item, :content => content)
-              %p.archives
-                %a{:href => '/archives.html'} Show me all posts!
               - if disqus_shortname && (@item[:disqus] != false) && !is_front_page?
                 = render('_disqus', :item => @item)
           - else
@@ -71,6 +65,13 @@
 
         %aside
           %img{:src => '/assets/images/roy.jpg', :alt => 'Picture of Roy', :class => 'roy'}
+          %ul#networks
+            %li
+              %a.linkedin{:href => 'http://www.linkedin.com/in/tomeij'} LinkedIn
+            %li
+              %a.facebook{:href => 'http://www.facebook.com/roytomeij'} Facebook
+            %li
+              %a.twitter{:href => 'http://twitter.com/roy'} Twitter
           %p I'm co-founder of Ruby consultancy <a href="http://80beans.com/">80beans</a> in Amsterdam, where I take care of front-end architecture and business development using an agile approach. I love front-end meta languages like Haml, Sass & CoffeeScript and enjoy speaking about them. For speaking proposals or questions, <a href="mailto:roy@tomeij.net">drop me a line</a>.
 
       %footer#footer
